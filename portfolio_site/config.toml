@@ -1,3 +1,5 @@
 baseURL = 'http://mzmr.xyz/'
 languageCode = 'en-us'
 title = "Skye/'s Portfolio"
+theme = "my_theme"
+

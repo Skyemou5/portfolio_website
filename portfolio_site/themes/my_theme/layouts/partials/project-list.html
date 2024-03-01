@@ -1,0 +1,12 @@
+<div class="projects">
+    {{ range where .Site.RegularPages "Section" "projects" }}
+      <div class="project">
+        <a href="{{ .Permalink }}">
+          <img src="{{ .Site.BaseURL }}{{ .Params.image }}" alt="{{ .Title }}" />
+          <h2>{{ .Title }}</h2>
+        </a>
+        <p>{{ .Summary }}</p>
+      </div>
+    {{ end }}
+  </div>
+  

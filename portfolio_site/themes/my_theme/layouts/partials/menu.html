@@ -1,0 +1,11 @@
+<nav>
+    <ul>
+      {{ range .Site.Menus.main }}
+        <li>
+          <a href="{{ .URL }}" {{ if .HasChildren }}class="has-children"{{ end }}>
+            {{ .Name }}
+          </a>
+        </li>
+      {{ end }}
+    </ul>
+</nav>

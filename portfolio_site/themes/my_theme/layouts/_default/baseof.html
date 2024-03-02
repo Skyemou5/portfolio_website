@@ -1,9 +1,17 @@
+<!-- baseof.html -->
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Skye's Portfolio</title>
+  <!-- ... -->
+  <link rel="stylesheet" href="{{ .Site.BaseURL }}/css/styles.css">
 </head>
 <body>
+  {{ partial "banner.html" . }}
+  {{ partial "menu.html" . }}
+  <div class="main-content">
+    {{ partial "profile.html" . }}
     {{ block "main" . }}{{ end }}
+  </div>
+  {{ partial "footer.html" . }}
 </body>
 </html>

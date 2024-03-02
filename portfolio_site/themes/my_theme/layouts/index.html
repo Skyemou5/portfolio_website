@@ -1,12 +1,6 @@
 {{ define "main" }}
-  <h1>Skye Faux</h1>
   <div class="projects">
-    {{ range .Site.RegularPages }}
+    <h2>Projects</h2>
     {{ partial "project-list.html" . }}
-      <div class="project">
-        <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
-        <p>{{ .Summary }}</p>
-      </div>
-    {{ end }}
   </div>
 {{ end }}

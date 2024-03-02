@@ -3,3 +3,25 @@ languageCode = 'en-us'
 title = "Skye/'s Portfolio"
 theme = "my_theme"
 
+
+
+
+[menu]
+
+  [[menu.main]]
+    identifier = "home"
+    name = "Home"
+    url = "/"
+    weight = 1
+
+  [[menu.main]]
+    identifier = "contact"
+    name = "Contact"
+    url = "/contact/"
+    weight = 2
+
+  [[menu.main]]
+    identifier = "Digital Brain"
+    name = "External Site"
+    url = "https://notes.mzmr.xyz"
+    weight = 3

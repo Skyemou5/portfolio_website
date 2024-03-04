@@ -1,0 +1,19 @@
+<!-- layouts/_default/list.html -->
+{{ define "main" }}
+  <div class="list">
+    <h1>{{ .Title }}</h1>
+    {{ if .IsHome }}
+      {{/* Optional content for homepage lists, like a featured post */}}
+    {{ else }}
+      {{/* The list of pages for sections, tags, categories, etc. */}}
+      <ul>
+        {{ range .Pages }}
+          <li>
+            <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+            <p>{{ .Summary }}</p>
+          </li>
+        {{ end }}
+      </ul>
+    {{ end }}
+  </div>
+{{ end }}

@@ -1,0 +1,15 @@
+{{ $lines := split .Inner "\n" }}
+{{ if gt (len $lines) 1 }}
+<div class="callout">
+  <div class="callout-title">{{ index $lines 0 | markdownify }}</div>
+  <div class="callout-body">
+    {{ range after 1 $lines }}
+      {{ . | markdownify }}
+    {{ end }}
+  </div>
+</div>
+{{ else }}
+<div class="callout single">
+  {{ .Inner | markdownify }}
+</div>
+{{ end }}

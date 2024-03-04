@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>http://mzmr.xyz/contact/</loc>
+    <lastmod>2024-03-01T21:25:38-07:00</lastmod>
+  </url><url>
+    <loc>http://mzmr.xyz/resume/</loc>
+    <lastmod>2024-03-01T21:08:53-07:00</lastmod>
+  </url><url>
+    <loc>http://mzmr.xyz/projects/</loc>
+    <lastmod>2024-03-01T21:08:01-07:00</lastmod>
+  </url><url>
+    <loc>http://mzmr.xyz/</loc>
+    <lastmod>2024-03-01T21:08:01-07:00</lastmod>
+  </url><url>
+    <loc>http://mzmr.xyz/projects/trideum_app/</loc>
+    <lastmod>2024-03-01T21:08:01-07:00</lastmod>
+  </url><url>
+    <loc>http://mzmr.xyz/categories/</loc>
+  </url><url>
+    <loc>http://mzmr.xyz/tags/</loc>
+  </url>
+</urlset>

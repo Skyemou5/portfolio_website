@@ -1,0 +1,10 @@
+{{ $pattern := "![IMPORTANT]" }}
+{{ if strings.Contains (trim .Inner " ") $pattern }}
+<div class="callout important">
+  {{ .Inner | replace $pattern "" | markdownify }}
+</div>
+{{ else }}
+<blockquote>
+  {{ .Inner | markdownify }}
+</blockquote>
+{{ end }}

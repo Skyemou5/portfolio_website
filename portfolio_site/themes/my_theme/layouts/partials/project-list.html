@@ -1,12 +1,15 @@
-<div class="projects">
-    {{ range where .Site.RegularPages "Section" "projects" }}
-      <div class="project">
-        <a href="{{ .Permalink }}">
-          <img src="{{ .Site.BaseURL }}{{ .Params.image }}" alt="{{ .Title }}" />
-          <h2>{{ .Title }}</h2>
-        </a>
-        <p>{{ .Summary }}</p>
-      </div>
-    {{ end }}
-  </div>
-  
+<!-- Within layouts/partials/project-list.html -->
+{{ range where .Site.RegularPages "Section" "projects" }}
+  <a href="{{ .Permalink }}" class="project-link">
+    <div class="project">
+      <h2>{{ .Title }}</h2>
+      {{ if .Params.listimage }}
+        <img src="{{ .Params.listimage | absURL }}" alt="{{ .Title }}" class="project-image" />
+      {{ else }}
+        <!-- Fallback if no image is specified or found -->
+        <img src="{{ $.Site.BaseURL }}images/default-project.png" alt="Default image" class="project-image" />
+      {{ end }}
+      <p>{{ .Params.summary }}</p>
+    </div>
+  </a>
+{{ end }}

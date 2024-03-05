@@ -1,4 +1,4 @@
-baseURL = 'http://mzmr.xyz/'
+baseURL = 'https://skyecg.netlify.app/'
 languageCode = 'en-us'
 title = "Skye Portfolio"
 theme = "my_theme"

@@ -1,0 +1,6 @@
+<!-- layouts/shortcodes/tags.html -->
+<div class="tags">
+    {{ range .Params.tags }}
+      <span class="tag">#{{ . }}</span>
+    {{ end }}
+</div>

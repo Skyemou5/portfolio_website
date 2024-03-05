@@ -3,6 +3,14 @@ languageCode = 'en-us'
 title = "Skye Portfolio"
 theme = "my_theme"
 
+[markup]
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = false
+    highlightInMarkdown = true
+    style = "monokai" # Or another style of your preference
+
+
 [menu]
 
   [[menu.main]]

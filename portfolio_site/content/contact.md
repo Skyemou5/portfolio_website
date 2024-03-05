@@ -11,3 +11,9 @@ Phone: (503) 809-0603
 GitHub: GitHub.com/skyemou5
 
 Portfolio: http://missblueskye.com/
+
+---
+
+### Socials
+
+Intagram: [mzmr.cg](https://www.instagram.com/mzmr.cg/)

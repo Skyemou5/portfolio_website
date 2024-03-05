@@ -214,6 +214,25 @@ a {
   display: block;
 }
 
+/* Project Tags */
+.project-tags {
+  /* Adjust spacing as needed */
+  margin-top: 10px;
+}
+
+
+
+.tags .tag {
+  background-color: #508fa8; /* Example background color */
+  border-radius: 15px; /* Creates rounded corners */
+  padding: 5px 15px; /* Space inside the tag */
+  margin-right: 5px; /* Space between tags */
+  font-size: 0.8em; /* Adjust tag text size as needed */
+  display: inline-block;
+  margin-top: 10px;
+}
+
+
 /* project grid images */
 
 .project-images-grid {

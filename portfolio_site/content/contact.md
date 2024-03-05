@@ -6,3 +6,8 @@ draft: false
 
 Email: skyemou5+portfolio@proton.me
 
+Phone: (503) 809-0603
+
+GitHub: GitHub.com/skyemou5
+
+Portfolio: http://missblueskye.com/

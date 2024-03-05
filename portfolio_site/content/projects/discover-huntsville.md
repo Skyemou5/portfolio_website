@@ -12,7 +12,6 @@ layoutStyle: "masonry"
 ---
 
 
-{{< image src="/images/dshv/rocket2.png" alt="My Image" width="100%" >}}
 
 
 ## Project Overview
@@ -33,11 +32,78 @@ The project utilized several technologies, including:
 My selection for this internship was influenced by my role in a previous group project overseen by Trideum. My ability to connect technologies, develop pipelines, and optimize workflows proved instrumental in my success at UVU and as a team member at Trideum.
 
 ## Specific Contributions
-### 3D Content Generation with Houdini & Maya
+### 3D Content Generation with Houdini, Maya, and Blender
 - Generated 3D content using Houdini and Maya, enriching the app with visually appealing assets.
 
+#### Plants generated with Houdini for virtual koi pond
+
+##### Lilly
+
+For this plant I used cable physics to set the stems, UV packing to pack the geometry of the lillypads and some clever vex to connect the cables.
+
+{{< imageGrid gridstyle="asymetric" gridsize="160px" gap="10px" >}}
+  ![DSHV app](/images/dshv/lilly-mesh.png)
+  ![DSHV app](/images/dshv/uv-pack-lilly.png)
+{{< /imageGrid >}}
 
 
+
+{{< image src="/images/dshv/lilly-network.png" alt="My Image" width="50%" >}}
+
+##### Waterweed
+
+To generate waterweed, I created a top segment, and a midsegment. These were then duplicated along a spline and rotated randomly creating the appearance of the final plant.
+
+{{< imageGrid gridstyle="masonry" gridsize="150px" gap="10px" >}}
+  ![DSHV app](/images/dshv/waterweed-01.png)
+  ![DSHV app](/images/dshv/waterweed-section-01.png)
+  ![DSHV app](/images/dshv/waterweed-section-02.png)
+{{< /imageGrid >}}
+
+{{< imageGrid gridstyle="masonry" gridsize="150px" gap="10px" >}}
+  ![DSHV app](/images/dshv/waterweed-network-01.png)
+  ![DSHV app](/images/dshv/waterweed-network-02.png)
+{{< /imageGrid >}}
+
+Cluster Generator - Uses a TOP network to automate randomizing parameters and saving cached versions out, then picking from that cache to instance to the cluster.
+
+{{< imageGrid gridstyle="masonry" gridsize="150px" gap="10px" >}}
+  ![DSHV app](/images/dshv/waterweed-network-03.png)
+  ![DSHV app](/images/dshv/waterweed-cluster-generator.png)
+{{< /imageGrid >}}
+
+##### Lotus
+
+This used simple petal generation and deformations with some math to form it into a lotus.
+
+{{< imageGrid gridstyle="masonry" gridsize="150px" gap="10px" >}}
+  ![DSHV app](/images/dshv/lotus-mesh.png)
+  ![DSHV app](/images/dshv/lotus-network.png)
+{{< /imageGrid >}}
+
+#### Koi Pond
+
+This was a central feature of one of the AR games. It involved finding a wall with street art of Koi fish and then a Koi pond would appear on the wall and you could design your own fish to put in the pond.
+
+I created the plants as mentioned earler and all the rest of it as well.
+
+{{< image src="/images/dshv/rocket2.png" alt="Koi Pond" width="100%" >}}
+
+> The stylized shaders were also a big part of my work here in Unity.
+
+{{< imageGrid gridstyle="masonry" gridsize="150px" gap="10px" >}}
+  ![DSHV app](/images/dshv/rocket_tank_01.png)
+  ![DSHV app](/images/dshv/rocket_tank_02.png)
+{{< /imageGrid >}}
+
+##### Rocket
+
+I modeled all the rocket pieces in Houdini. That let me make quick changes and iterations and it was easier to add vertex data that I could use in the shader I created in Unity.
+
+{{< imageGrid gridstyle="masonry" gridsize="150px" gap="10px" >}}
+  ![DSHV app](/images/dshv/rocket-mesh.png)
+  ![DSHV app](/images/dshv/rocket-network.png)
+{{< /imageGrid >}}
 
 ### Pipeline Optimization
 - Developed efficient pipelines to streamline the development process, ensuring smooth workflows and timely delivery of assets.
@@ -55,6 +121,9 @@ My selection for this internship was influenced by my role in a previous group p
   ![DSHV app](/images/dshv/app-05.png)
   ![DSHV app](/images/dshv/app-06.png)
 {{< /imageGrid >}}
+
+
+
 
 ### Shader Development
 - Created custom shaders to add visual depth and realism to the app's graphics.

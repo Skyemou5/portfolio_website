@@ -28,8 +28,10 @@ body {
   background-color: var(--background-color);
 }
 
+
 a {
   text-decoration: none;
+  color: #59898c;
 }
 
 .divider {
@@ -265,6 +267,12 @@ a {
   text-align: center;
 }
 
+.footer a {
+  color: #59898c;
+  text-decoration: none;
+  
+}
+
 /* Desktop styles */
 @media screen and (min-width: 768px) {
   .container {
@@ -375,9 +383,9 @@ nav a:hover {
 /* markdown rendering */
 
 blockquote {
-  background-color: #dcdcdc;
+  background-color: #cfe3e6;
   color: #2b2b2b;
-  border-left: 10px solid #ccc;
+  border-left: 10px solid #90b2b3;
   margin: 1.5em 10px;
   padding: 0.5em 10px;
   quotes: "\201C""\201D""\2018""\2019";
@@ -386,7 +394,7 @@ blockquote {
 .callout {
   margin: 20px 0;
   padding: 10px;
-  border: 1px solid #ccc;
+  border: 1px solid #929292;
   border-left: 4px solid #e53e3e;
   background-color: #f9f9f9;
 }

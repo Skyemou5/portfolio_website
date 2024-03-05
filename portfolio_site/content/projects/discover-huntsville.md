@@ -105,8 +105,44 @@ I modeled all the rocket pieces in Houdini. That let me make quick changes and i
   ![DSHV app](/images/dshv/rocket-network.png)
 {{< /imageGrid >}}
 
+##### Enviornment of Koi pond
+
+I created several system to generate meshes and rocks for the koi pond. This included the creative use of noise, and remeshing to create the walls, and TOP networks to create random copies of objects.
+
+Backdrop rock wall:
+
+{{< imageGrid gridstyle="masonry" gridsize="200px" gap="10px" >}}
+  ![DSHV app](/images/dshv/cliff-mesh.png)
+  ![DSHV app](/images/dshv/cliff-network-full.png)
+{{< /imageGrid >}}
+
+Ground:
+
+{{< imageGrid gridstyle="masonry" gridsize="200px" gap="10px" >}}
+  ![DSHV app](/images/dshv/floor-mesh.png)
+  ![DSHV app](/images/dshv/floor-network.png)
+{{< /imageGrid >}}
+
+Rocks:
+
+{{< imageGrid gridstyle="masonry" gridsize="250px" gap="10px" >}}
+  ![DSHV app](/images/dshv/rock.png)
+  ![DSHV app](/images/dshv/rock-network.png)
+  ![DSHV app](/images/dshv/rock-network-02.png)
+  ![DSHV app](/images/dshv/rock-upper-network.png)
+{{< /imageGrid >}}
+
+Scattering the Rocks:
+
+{{< imageGrid gridstyle="masonry" gridsize="200px" gap="10px" >}}
+  ![DSHV app](/images/dshv/rocks-placed.png)
+  ![DSHV app](/images/dshv/scatter-tool.png)
+{{< /imageGrid >}}
+
 ### Pipeline Optimization
 - Developed efficient pipelines to streamline the development process, ensuring smooth workflows and timely delivery of assets.
+- Specifically extending Unity's packaging system in order to more easily modularise the project and make it easier for the team to work on separate components without conflicts.
+- Created design documents that covered code conventions, design, conventions, file structure, and name conventions.
 
 ### Programming in C#
 - Utilized C# programming to build major components of the app, enhancing its functionality and user experience.
@@ -123,32 +159,16 @@ I modeled all the rocket pieces in Houdini. That let me make quick changes and i
 {{< /imageGrid >}}
 
 
-
-
 ### Shader Development
-- Created custom shaders to add visual depth and realism to the app's graphics.
+- Created custom shaders to add visual depth and flair to the app's 3D experiences.
+- This involved code and using a shader-graph in order to create the shaders.
+- I learned a great deal about GPU call stacks, and performance.
 
-## Challenges & Solutions
-Throughout the project, I encountered and successfully addressed various challenges, showcasing my problem-solving skills and adaptability.
+(Ufortunately I no longer have access to the project and wasn't able to document visually what work I did here.)
 
 ## Achievements & Impact
 The Discover Huntsville app achieved significant milestones and positively impacted users by providing an immersive and informative experience of the city.
 
-## Visuals
-Include screenshots, videos, or demos showcasing the app's features and your contributions.
-
-## Component Showcase
-
-### The Mobile App Screenshots
-
-
-
-
-
-<!-- {{< imageGrid gridstyle="masonry" gridsize="200px" gap="10px" >}}
-  ![Image description](/images/dshv/rocket2.png)
-  ![Image description](/images/dshv/rocket2.png)
-{{< /imageGrid >}} -->
 
 
 

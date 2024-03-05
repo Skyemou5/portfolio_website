@@ -83,23 +83,5 @@ Skilled Technical Artist, Consultant, and Professor with experience in 3D modeli
 - 1st Place in Utah Valley University Digital Media Showcase 2022 (Games and Animation Category)
 
 ---
-**References:**
 
-**Trevor McIntosh**
-*VR Wizards - Co-Founder*
-Phone: (801) 888-7874
-Email: trevorLmcintosh@gmail.com
-
-**Jon Franklin**
-*Lead Instructor - Lost Boys VFX School* | *Former Colleague - Utah Valley University*
-Phone: (514) 980-6797
-Email: jonathan.t.franklin@protonmail.com
-
-**Kim Brown**
-*Digital Media Department Chair, Associate Professor - Utah Valley University*
-Phone: (801) 792-6110
-Email: kim.brown@uvu.edu
-
-
----
 

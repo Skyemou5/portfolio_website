@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- swiper -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <!-- Essential meta tags -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -39,5 +41,7 @@
   {{ if .Site.Params.enableLiveReload }}
     {{ .Site.Params.liveReload }}
   {{ end }}
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  {{ partial "scripts.html" . }}
 </body>
 </html>

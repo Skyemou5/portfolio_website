@@ -2,14 +2,17 @@
 
 /* Variables */
 :root {
-  --primary-color: #598b8c;
+  --primary-color: #151919;
   --secondary-color: #74598C;
   --tertiary-color: #8C5A59;
   --fourth-color: #728C59;
   --background-color: #0a0a0a;
   --accent-color: #6BACD7;
-  --page-color: #42454a;
-  --menu-color: #6e64b1;
+  --page-color: #0b0e12;
+  --menu-color: #292c35;
+  --text-color: #e7e7e7;
+  --text-color-secondary: #e8e8e8;
+  --divider-color: #59898c;
 }
 
 
@@ -30,7 +33,7 @@ a {
 }
 
 .divider {
-  background-color: var(--primary-color);
+  background-color: var(--divider-color);
   width: 90%;
   height: 2px;
   margin: 20px auto;
@@ -39,11 +42,11 @@ a {
 
 /* email link */
 .content a[href^="mailto:"] {
-  color: #d1d1d1 /* Replace #yourColor with your desired color */
+  color: var(--text-color-secondary) /* Replace #yourColor with your desired color */
 }
 
 .content a[href^="mailto:"]:hover {
-  color: #efefef; /* Replace #hoverColor with your desired hover color */
+  color: var(--text-color-secondary); /* Replace #hoverColor with your desired hover color */
   text-decoration: underline; /* or any other hover effect */
 }
 
@@ -52,11 +55,62 @@ a {
 .container {
   margin-left: auto;
   margin-right: auto;
-  max-width: 1200px; /* Set the maximum width you desire */
+  max-width: 2000px; /* Set the maximum width you desire */
   width: 100%;
   min-height: 100vh;
   background-color: var(--page-color);
-  color: #efefef;
+  color: var(--text-color);
+  overflow-y: auto;
+}
+
+/* content container */
+.content-container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 850px; /* or whatever maximum width you prefer */
+  padding-left: 15px; /* to ensure some space at the sides */
+  padding-right: 15px; /* to ensure some space at the sides */
+}
+
+/* Image grid */
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px;
+}
+
+.image-grid img {
+  width: 100%; /* Makes the image responsive within its container */
+  height: auto; /* Maintains the aspect ratio */
+  object-fit: cover; /* Ensures the image covers the area, you can also use 'contain' if you don't want images to be cropped */
+}
+
+/* Image Overlay */
+
+#image-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000; /* Ensure it's above other content */
+}
+
+#close-overlay {
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+#large-image {
+  max-width: 90%;
+  max-height: 90%;
 }
 
 
@@ -82,22 +136,48 @@ a {
   text-align: center; /* Center-align the text */
 }
 
+/* Project grid */
+
+/* Container holding all projects */
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); /* Adjust the minmax values based on your preference */
+  gap: 20px; /* Space between projects */
+}
+
+/* Individual project entries */
+.project-entry {
+  /* Additional styling for borders, padding, etc., can be added here if needed */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .projects-container {
+    grid-template-columns: 1fr; /* Single column layout on smaller screens */
+  }
+}
+
+
 /* Project list */
 
 .project-link {
   text-decoration: none; /* Removes the underline from all links */
   color: inherit; /* Ensures that the link text uses the inherited color, not the default blue */
+
 }
 
 .project a {
   color: inherit; /* This makes the link color the same as the surrounding text color */
   text-decoration: none; /* This removes the underline from the links */
+
 }
 
 .project {
   cursor: pointer; /* This changes the mouse cursor to indicate the whole area is clickable */
   width: 100%;
   margin: 0 auto;
+  max-width: 500px;
+  
 }
 
 /* To make the whole project container a clickable area, you can apply the following: */
@@ -110,6 +190,7 @@ a {
   max-height: 100%; /* You can set a max-height if you want to constrain the image by height as well */
   object-fit: contain; /* This will make sure the entire image fits within the container */
   object-position: center center;
+  
 }
 
 .project-image {
@@ -119,6 +200,62 @@ a {
   margin: 0 auto 20px; /* Adjust margin as needed */
 }
 
+.project-image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 10px;
+}
+
+.project-image-grid img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* project grid images */
+
+.project-images-grid {
+  display: grid;
+  grid-gap: 10px;
+  margin-top: 20px;
+}
+
+.project-images-grid img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.project-images-grid.masonry {
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-auto-rows: 200px; /* Fixed height, let the width be responsive */
+}
+
+.project-images-grid.symmetric {
+  grid-template-columns: repeat(3, 1fr); /* Symmetric three-column layout */
+}
+
+.project-images-grid.asymmetric {
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: minmax(100px, auto);
+}
+
+/* For asymmetric grid, you can target specific children to span more rows or columns */
+.project-images-grid.asymmetric img:nth-child(1),
+.project-images-grid.asymmetric img:nth-child(2) {
+  grid-column: span 2;
+}
+
+.project-images-grid.asymmetric img:nth-child(3) {
+  grid-row: span 2;
+}
+
+.project-images-grid.single-image img {
+  grid-column: 1 / -1; /* Make the image span all columns */
+  max-height: 400px; /* Optional: if you want to limit the height */
+  object-fit: contain; /* Use 'contain' to ensure the entire image is visible */
+}
 
 
 /* Footer */
@@ -162,6 +299,8 @@ a {
     grid-area: main;
     padding-left: 20px;
     padding-right: 20px;
+    max-width: 1700px;
+    /* margin: 0 auto; */
   }
 
   .footer {

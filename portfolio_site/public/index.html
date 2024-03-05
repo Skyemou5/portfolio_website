@@ -3,6 +3,8 @@
 <head>
 	<meta name="generator" content="Hugo 0.111.3">
   
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
@@ -58,6 +60,7 @@
       <div class="profile">
     <img src="http://mzmr.xyz//images/portrait_06.jpg" alt="Your Name" class="profile-image" />
     <h2>Skye</h2>
+    <div class="divider"></div>
     <ul class="skills">
       <li>Technical Artist</li>
       <li>3D Generalist</li>
@@ -72,22 +75,38 @@
     <main class="main-content">
       
   <div class="projects">
-    <h2>Projects</h2>
-    <div class="projects">
+    <h1>Projects</h1>
+    <div class="divider"></div>
+    
+<div class="projects-container">
   
-    <a href="http://mzmr.xyz/projects/trideum_app/" class="project-link">
+    <a href="http://mzmr.xyz/projects/discover-huntsville/" class="project-link">
       <div class="project">
-        
-        
+        <h2>Discover Huntsville - AR App developed at Trideum</h2>
+        <div class="project-images-grid single-image">
           
-          <img src="http://mzmr.xyz/images/default-project.png" alt="Default image" />
-        
-        <h2>Trideum_app</h2>
+            <img src="http://mzmr.xyz/images/dshv/rocket2.png" alt="Skye Portfolio" />
+          
+        </div>
         <p>Discover Huntsville is an AR app I helped create as a tech artist and programmer. I created procedural assets in houdini for the AR experience, designed NPR shaders, and coded in C# using Unity. Additionally I participated in planning and communication between teams and gave presentations and updates during meetings.</p>
       </div>
     </a>
   
-</div>
+    <a href="http://mzmr.xyz/projects/pysoma/" class="project-link">
+      <div class="project">
+        <h2>Pysoma - Cross platform pipeline management tool for small teams</h2>
+        <div class="project-images-grid masonry">
+          
+            <img src="http://mzmr.xyz/images/1.png" alt="Skye Portfolio" />
+          
+            <img src="http://mzmr.xyz/images/default-project.png" alt="Skye Portfolio" />
+          
+        </div>
+        <p>Pipeline tool developed in Python to unify project workflows on small teams using houdini.</p>
+      </div>
+    </a>
+  
+</div> 
 
   </div>
 
@@ -95,11 +114,13 @@
     
     
     <footer class="footer">
-      
+      <p>This is a static site generated with HUGO, using my own custom theme</p>
     </footer>
   </div>
 
   
   
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="/js/custom.js"></script>
 </body>
 </html>

@@ -1,1 +1,4 @@
-<img src="{{ .Get "src" }}" alt="{{ .Get "alt" }}" style="width: {{ .Get "width" }}; height: {{ .Get "height" }};">
+<!-- layouts/shortcodes/image.html -->
+<a href="{{ .Get "src" }}" class="image-link" data-toggle="overlay">
+    <img src="{{ .Get "src" }}" alt="{{ .Get "alt" }}" style="width: {{ .Get "width" }}; height: {{ .Get "height" }};">
+</a>

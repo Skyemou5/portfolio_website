@@ -1,0 +1,6 @@
+<!-- layouts/shortcodes/imageGrid.html -->
+<div class="image-grid {{ with .Get "gridstyle" }}{{ . }}{{ end }}" style="
+  {{ with .Get "gridsize" }}grid-template-columns: repeat(auto-fit, minmax({{ . }}, 1fr));{{ end }}
+  {{ with .Get "gap" }}gap: {{ . }};{{ end }}">
+  {{ .Inner | markdownify }}
+</div>

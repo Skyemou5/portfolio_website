@@ -1,15 +1,19 @@
-<!-- Within layouts/partials/project-list.html -->
-{{ range where .Site.RegularPages "Section" "projects" }}
-  <a href="{{ .Permalink }}" class="project-link">
-    <div class="project">
-      <h2>{{ .Title }}</h2>
-      {{ if .Params.listimage }}
-        <img src="{{ .Params.listimage | absURL }}" alt="{{ .Title }}" class="project-image" />
-      {{ else }}
-        <!-- Fallback if no image is specified or found -->
-        <img src="{{ $.Site.BaseURL }}images/default-project.png" alt="Default image" class="project-image" />
-      {{ end }}
-      <p>{{ .Params.summary }}</p>
-    </div>
-  </a>
-{{ end }}
+<!-- Start the container before the range loop -->
+<div class="projects-container">
+  {{ range where .Site.RegularPages "Section" "projects" }}
+    <a href="{{ .Permalink }}" class="project-link">
+      <div class="project">
+        <h2>{{ .Title }}</h2>
+        <div class="project-images-grid {{ if eq (len .Params.images) 1 }}single-image{{ else if .Params.layoutStyle }}{{ .Params.layoutStyle }}{{ end }}">
+          {{ range .Params.images }}
+            <img src="{{ . | absURL }}" alt="{{ $.Title }}" />
+          {{ else }}
+            <!-- Fallback if no images are specified or found -->
+            <img src="{{ $.Site.BaseURL }}images/default-project.png" alt="Default image" />
+          {{ end }}
+        </div>
+        <p>{{ .Summary }}</p>
+      </div>
+    </a>
+  {{ end }}
+</div> <!-- End the container after the range loop -->

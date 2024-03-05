@@ -5,6 +5,43 @@
     <link>http://mzmr.xyz/tags/</link>
     <description>Recent content in Tags on Skye Portfolio</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="http://mzmr.xyz/tags/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <lastBuildDate>Fri, 01 Mar 2024 21:08:01 -0700</lastBuildDate><atom:link href="http://mzmr.xyz/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>houdini</title>
+      <link>http://mzmr.xyz/tags/houdini/</link>
+      <pubDate>Fri, 01 Mar 2024 21:08:01 -0700</pubDate>
+      
+      <guid>http://mzmr.xyz/tags/houdini/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>pipeline</title>
+      <link>http://mzmr.xyz/tags/pipeline/</link>
+      <pubDate>Fri, 01 Mar 2024 21:08:01 -0700</pubDate>
+      
+      <guid>http://mzmr.xyz/tags/pipeline/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>programming</title>
+      <link>http://mzmr.xyz/tags/programming/</link>
+      <pubDate>Fri, 01 Mar 2024 21:08:01 -0700</pubDate>
+      
+      <guid>http://mzmr.xyz/tags/programming/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tech-art</title>
+      <link>http://mzmr.xyz/tags/tech-art/</link>
+      <pubDate>Fri, 01 Mar 2024 21:08:01 -0700</pubDate>
+      
+      <guid>http://mzmr.xyz/tags/tech-art/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>

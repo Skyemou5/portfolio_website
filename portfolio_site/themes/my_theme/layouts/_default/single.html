@@ -2,6 +2,10 @@
   <div class="content">
     <h1>{{ .Title }}</h1>
     {{ partial "divider.html" . }}
-    {{ .Content }}
+    <div class="content-container">
+      {{ .Content }}
+    </div>
+    {{ partial "image-overlay.html" . }}
   </div>
+
 {{ end }}

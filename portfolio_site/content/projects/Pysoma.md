@@ -2,7 +2,7 @@
 title: "Pysoma - Cross platform pipeline management tool for small teams"
 date: 2024-03-01T21:06:19-07:00
 draft: false
-summary: Pipeline tool developed in Python to unify project workflows on small teams using houdini.
+summary: Pipeline tool developed in Python to unify project workflows on small teams accross win,mac, and linux for teams using houdini.
 images:
     - "/images/pysoma/pysomaicon.png"
 displaystyle: "grid"
@@ -12,6 +12,9 @@ tags:
     - Python
     - Linux
     - Pipeline
+    - VFX
+    - Film
+weight: 1
 ---
 
 [Pysoma Github](https://github.com/Skyemou5/Pysoma)
@@ -19,6 +22,8 @@ tags:
 I developed this tool to help my senior project team finish a cinematic for the game we were working. Sadly the cinemati never finished, but this tool lives on.
 
 This tool streamlines Houdini project management, addressing common challenges and inefficiencies in environment setup, project configuration, and management. Designed for Houdini users across various platforms, it ensures consistency and efficiency in project setups.
+
+> The name Pysoma comes from Pyrosome. Very cool jellyfish like creatures that live as a colony that acts as a single creature. I thought the analogy was fun for working on creative projects and doing pipeline work so everyone can work together to make a project happen.
 
 ## Features
 

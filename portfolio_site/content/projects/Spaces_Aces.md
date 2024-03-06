@@ -1,5 +1,5 @@
 ---
-title: "Spaces Aces"
+title: "Spaces Aces - Unity Game"
 date: 2024-03-01T21:06:43-07:00
 draft: false
 images:
@@ -11,6 +11,8 @@ tags:
     - Blender
     - Shaders
     - Pipeline
+    - Game Dev
+weight: 1
 ---
 
 This was my senior project at UVU. I worked on a team of 5 people to develop an MVP of an arena space dog-fighting game. Our team got first place at the Digital Media Showcase at UVU in 2022. I worked on pipeline optimisation, realtime FX, procedural systems, modeling, and shaders.
@@ -140,5 +142,11 @@ We ended up winning the digital media competition at UVU because of our hard wor
 # Reflections and Learnings
 I learned a lot about working on a team and managing workflows, version control, and the importance of pipeline management on large projects. I also found it very rewarding to impliment procedural tools and systems for my other team members to use.
 
+# More videos
+
+Hangar screen:
 {{< youtube tdh090qTJSQ  800 450 0 1>}}
 
+
+Longer Gameplay video:
+{{< youtube WHFOQpm87PQ  800 450 0 1>}}

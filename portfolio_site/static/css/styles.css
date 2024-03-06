@@ -42,6 +42,21 @@ a {
   
 }
 
+/* video */
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* or specific height if needed */
+}
+
+/* .video-container iframe,
+.video-container video {
+  max-width: 100%;
+  height: auto;
+} */
+
+
 /* email link */
 .content a[href^="mailto:"] {
   color: var(--text-color-secondary) /* Replace #yourColor with your desired color */
@@ -74,18 +89,122 @@ a {
   padding-right: 15px; /* to ensure some space at the sides */
 }
 
-/* Image grid */
-.image-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 10px;
-}
+
 
 .image-grid img {
   width: 100%; /* Makes the image responsive within its container */
   height: auto; /* Maintains the aspect ratio */
   object-fit: cover; /* Ensures the image covers the area, you can also use 'contain' if you don't want images to be cropped */
+  border-radius: 2%;
 }
+
+/* Base grid style */
+.image-grid {
+  display: grid;
+  gap: 10px; /* Default gap */
+  margin-bottom: 10px; /* Default bottom margin */
+}
+
+/* Variations of the image grid */
+.image-grid.masonry {
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+.image-grid.three-column {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/* Symmetric two-column grid */
+.image-grid.symmetric-two {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+/* Symmetric three-column grid */
+.image-grid.symmetric-three {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/* Symmetric four-column grid */
+.image-grid.symmetric-four {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* Asymmetric grid with various sized columns */
+.image-grid.asymmetric {
+  grid-template-columns: 3fr 2fr 2fr 1fr;
+}
+
+/* Target specific children for different sizes, this is an example, adjust as necessary */
+.image-grid.asymmetric img:nth-child(1) {
+  grid-column: span 2;
+}
+
+.image-grid.asymmetric img:nth-child(2),
+.image-grid.asymmetric img:nth-child(3) {
+  grid-column: span 1;
+}
+
+.image-grid.asymmetric img:nth-child(4) {
+  grid-column: span 3;
+}
+
+
+/* Two-column grid */
+.image-grid.two-column {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+/* Four-column grid */
+.image-grid.four-column {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* Complex asymmetric grid */
+.image-grid.complex {
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.image-grid.complex img:nth-child(1) {
+  grid-column: span 8;
+}
+
+.image-grid.complex img:nth-child(2) {
+  grid-column: span 4;
+}
+
+.image-grid.complex img:nth-child(3) {
+  grid-column: span 4;
+}
+
+.image-grid.complex img:nth-child(4) {
+  grid-column: span 8;
+}
+
+/* Responsive adjustments for complex grid */
+@media (max-width: 768px) {
+  .image-grid.complex {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .image-grid.complex img:nth-child(1),
+  .image-grid.complex img:nth-child(2),
+  .image-grid.complex img:nth-child(3),
+  .image-grid.complex img:nth-child(4) {
+    grid-column: span 6;
+  }
+}
+
+@media (max-width: 480px) {
+  .image-grid.complex {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .image-grid.complex img {
+    grid-column: span 3;
+  }
+}
+
+
 
 /* Image Overlay */
 
@@ -114,6 +233,7 @@ a {
   max-width: 90%;
   max-height: 90%;
 }
+
 
 
 /* Profile */
@@ -179,7 +299,9 @@ a {
   width: 100%;
   margin: 0 auto;
   max-width: 500px;
-  
+  border-radius: 2%;
+  padding: 10px;
+  box-sizing: border-box;
 }
 
 /* To make the whole project container a clickable area, you can apply the following: */
@@ -192,11 +314,12 @@ a {
   max-height: 100%; /* You can set a max-height if you want to constrain the image by height as well */
   object-fit: contain; /* This will make sure the entire image fits within the container */
   object-position: center center;
-  
+  border-radius: 2%;
 }
 
 .project-image {
   max-width: 100%;
+  border-radius: 2%;
   height: auto;
   display: block;
   margin: 0 auto 20px; /* Adjust margin as needed */
@@ -212,6 +335,7 @@ a {
   width: 100%;
   height: auto;
   display: block;
+  border-radius: 2%;
 }
 
 /* Project Tags */
@@ -246,6 +370,7 @@ a {
   height: auto;
   display: block;
   object-fit: cover;
+  border-radius: 2%;
 }
 
 .project-images-grid.masonry {
@@ -276,6 +401,7 @@ a {
   grid-column: 1 / -1; /* Make the image span all columns */
   max-height: 400px; /* Optional: if you want to limit the height */
   object-fit: contain; /* Use 'contain' to ensure the entire image is visible */
+  border-radius: 2%;
 }
 
 
@@ -308,7 +434,9 @@ a {
   .banner {
     grid-area: banner;
     padding-left: 20px;
+    min-height: 60px;
     background-color: var(--primary-color);
+    
   }
 
   .menu {
@@ -350,14 +478,29 @@ a {
       "footer";
   }
 
-  .banner { grid-area: banner; }
-  .menu { grid-area: menu; }
-  .profile-section { grid-area: profile; }
-  .main-content { grid-area: main; }
-  .footer { grid-area: footer; }
+  .banner { 
+    grid-area: banner;
+    background-color: var(--primary-color);
+    min-height: 50px;
+  }
+  .menu { 
+    grid-area: menu;
+    text-align: center;
+  }
+  .profile-section {
+    grid-area: profile; 
+    padding-bottom: 40px;
+  }
+  .main-content { 
+    grid-area: main; 
+  }
+  .footer { 
+    grid-area: footer; 
+  }
 }
 
 /* Base styles for menu */
+
 nav {
   background-color: rgb(34, 34, 34);
   /* color: rgb(252, 252, 252); */
@@ -402,12 +545,13 @@ nav a:hover {
 /* markdown rendering */
 
 blockquote {
-  background-color: #cfe3e6;
+  background-color: #cfe5e9;
   color: #2b2b2b;
-  border-left: 10px solid #90b2b3;
+  border-left: 15px solid #85d2d4;
   margin: 1.5em 10px;
-  padding: 0.5em 10px;
+  padding: 0.1em 20px;
   quotes: "\201C""\201D""\2018""\2019";
+  border-radius: 2%;
 }
 
 .callout {
@@ -432,4 +576,10 @@ blockquote {
 .callout.single {
   /* Different style when there's only one line */
   font-weight: bold;
+}
+
+/* misc */
+
+iframe {
+  border-radius: 2%;
 }

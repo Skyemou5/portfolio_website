@@ -1,6 +1,6 @@
 <!-- Start the container before the range loop -->
 <div class="projects-container">
-  {{ range where .Site.RegularPages "Section" "projects" }}
+  {{ range sort (where .Site.RegularPages "Section" "projects") "Weight" "asc" }}
     <a href="{{ .Permalink }}" class="project-link">
       <div class="project">
         <h2>{{ .Title }}</h2>

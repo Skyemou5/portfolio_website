@@ -9,7 +9,7 @@ draft: false
 
 ---
 **Professional Summary:**
-Skilled Technical Artist, Consultant, and Professor with experience in 3D modeling, shading, rigging, pipeline, procedural, and game development. Ability to write and implement comprehensive curriculum at a university level, as well as consult on technical art, procedural generation, pipeline optimization, and general 3D production. 
+Skilled Technical Artist, Consultant, and Professor with experience in 3D modeling, shading, rigging, pipeline, procedural, and game development. Ability to write and implement comprehensive curriculum at a university level, as well as consult on technical art, procedural generation, pipeline optimization including unix tooling and terminals like bash, and general 3D production. 
 
 ---
 **Technical and Coding Proficiency:**

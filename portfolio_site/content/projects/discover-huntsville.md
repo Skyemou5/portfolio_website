@@ -16,9 +16,10 @@ images:
 showInList: true
 displayStyle: "grid"
 layoutStyle: "masonry"
+weight: 0
 ---
 
-
+> The app is now available on appstores
 
 
 ## Project Overview

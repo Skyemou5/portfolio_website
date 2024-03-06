@@ -51,15 +51,45 @@ Tower Meshes and UVs:
 {{< /imageGrid >}}
 {{< imageGrid gridstyle="masonry" gridsize="200px" gap="10px" >}}
   ![spaces aces](/images/ratchet-and-clank/tower-03-mesh.png)
-  ![spaces aces](/images/ratchet-and-clank/tower-03-uv.png)
   ![spaces aces](/images/ratchet-and-clank/tower-04-uvis.png)
+  ![spaces aces](/images/ratchet-and-clank/tower-03-uv.png)
 {{< /imageGrid >}}
 {{< imageGrid gridstyle="masonry" gridsize="200px" gap="10px" >}}
   ![spaces aces](/images/ratchet-and-clank/tower-06-mesh-02.png)
   ![spaces aces](/images/ratchet-and-clank/tower-06-uv.png)
 {{< /imageGrid >}}
+{{< imageGrid gridstyle="masonry" gridsize="200px" gap="10px" >}}
+  ![spaces aces](/images/ratchet-and-clank/platform-mesh.png)
+  ![spaces aces](/images/ratchet-and-clank/bridge.png)
+{{< /imageGrid >}}
 
-{{< image src="/images/ratchet-and-clank/ratchet-reference.jpg" alt="My Image" width="100%" >}}
+Taxi Mesh and UVs:
+
+{{< imageGrid gridstyle="masonry" gridsize="200px" gap="10px" >}}
+  ![spaces aces](/images/ratchet-and-clank/taxi-wire.png)
+  ![spaces aces](/images/ratchet-and-clank/taxi-uv-project.png)
+  ![spaces aces](/images/ratchet-and-clank/taxi-uv.png)
+{{< /imageGrid >}}
+
+My pipeline for this was Blender to Unity with fbx, including the camera, because this was mostly a static scene in unity I could set everything up in Blender first then export:
+
+{{< imageGrid gridstyle="symmetric-four" gridsize="200px" gap="10px" >}}
+  ![spaces aces](/images/ratchet-and-clank/main-scene-blender.png)
+  ![spaces aces](/images/ratchet-and-clank/main-scene-blender-02.png)
+  ![spaces aces](/images/ratchet-and-clank/main-scene-blender-camera.png)
+  ![spaces aces](/images/ratchet-and-clank/main-scene-outliner.png)
+{{< /imageGrid >}}
+
+As you can see from the outliner image there are a lot of collections. The workflow went as follows:
+- create building in separate file with correct UVs and Vertex Colors.
+- Append file to main-scene file.
+- Instance the appended file to layout the scene.
+
+With this workflow I was able to use the same materials for each object without having to bring in the whole scene into substance. This also saved a lot of memory because of the instancing.
+
+Then This was exported into unity and all the materials, lighting, animation and post-processing set up there.
+
+{{< youtube -HgehbrJBaw 800 450 0 1>}}
 
 ## Challenges Faced
 - Recreating iconic elements with high fidelity to the original game while ensuring optimal performance.
@@ -74,10 +104,3 @@ Tower Meshes and UVs:
 ## Outcome
 The final product is a highly detailed and faithful recreation of the Ratchet and Clank game scene, demonstrating a deep understanding of various software tools and techniques. This project not only showcases technical 3D modeling and texturing skills but also highlights the ability to capture and recreate the essence of a dynamic game environment.
 
-## Gallery
-- [Add screenshots or video links of the final scene]
-- [Include before/after comparisons or progress shots]
-- [Provide links to any walkthroughs or making-of videos]
-
-## Acknowledgments
-- [Mention any collaborations, inspirations, or resources that were instrumental in completing the project]

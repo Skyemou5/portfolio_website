@@ -48,6 +48,7 @@ a {
   justify-content: center;
   align-items: center;
   height: 100%; /* or specific height if needed */
+  margin-bottom: 10px;
 }
 
 /* .video-container iframe,

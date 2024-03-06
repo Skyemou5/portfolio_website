@@ -1,0 +1,14 @@
+<!-- layouts/shortcodes/sketchfab.html -->
+<div class="sketchfab-embed-wrapper">
+    <iframe title="{{ .Get "title" }}" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true"
+        allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share
+        src="{{ .Get "src" }}" width="800" height="450"></iframe>    <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;">
+        <a href="{{ .Get "modelUrl" }}" target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;">
+            {{ .Get "modelName" }}
+        </a> by
+        <a href="{{ .Get "authorUrl" }}" target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;">
+            {{ .Get "authorName" }}
+        </a> on
+        <a href="https://sketchfab.com" target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a>
+    </p>
+</div>

@@ -584,3 +584,21 @@ blockquote {
 iframe {
   border-radius: 2%;
 }
+
+/* sketchfab */
+
+.sketchfab-embed-wrapper {
+  text-align: center; /* Centers the iframe container */
+  margin: 0 auto; /* Additional centering for the block element */
+  max-width: 80%; /* Set a max-width to control size */
+}
+
+.sketchfab-embed-wrapper iframe {
+  width: 100%; /* Use 100% of the .sketchfab-embed-wrapper */
+  height: 500px; /* Set a fixed height or use responsive height as needed */
+}
+
+/* Optional: Add padding for visual spacing around the iframe */
+.sketchfab-embed-wrapper {
+  padding: 20px 0; /* Add padding to the top and bottom */
+}

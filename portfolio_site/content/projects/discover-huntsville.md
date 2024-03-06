@@ -10,6 +10,8 @@ tags:
     - Pipeline
     - Unity
     - Game Dev
+    - Surfacing
+    - Programming
 images:
     - "/images/dshv/app-06.png"
     - "/images/dshv/rocket2.png"

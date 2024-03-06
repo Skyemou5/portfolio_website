@@ -6,9 +6,11 @@ images:
     - "/images/airship/airship-wide-shot-01.jpg"
 tags:
     - Blender
-    - Modeling
+    - 3D Modeling
     - Texturing
     - Rendering
+    - Simulation
+    - Surfacing
 weight: 4
 summary: Primarily a modeling and surfacing project done entirely in Blender in order to learn blender. It's a fun steampunk airship of my own design.
 ---

@@ -1,7 +1,5 @@
 <div class="video-container">
     <iframe 
-        width="{{ with .Get 1 }}{{ . }}{{ else }}560{{ end }}" 
-        height="{{ with .Get 2 }}{{ . }}{{ else }}315{{ end }}" 
         src="https://www.youtube.com/embed/{{ .Get 0 }}?autoplay={{ with .Get 3 }}{{ . }}{{ else }}0{{ end }}&loop={{ with .Get 4 }}{{ . }}{{ else }}0{{ end }}&playlist={{ .Get 0 }}"
         frameborder="0" 
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 

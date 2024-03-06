@@ -14,7 +14,7 @@
   --text-color-secondary: #e8e8e8;
   --divider-color: #59898c;
   --project-hover-color: #88cbdf65;
-  --banner-image: url("/images/pastelcyberpunk.png");
+  --banner-image: url("/images/pastel-cyberpunk/pastelcyberpunk.png");
 }
 
 
@@ -258,8 +258,8 @@ a {
 }
 
 .profile-image {
-  width: 120px;
-  height: 120px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   object-fit: cover;
   margin: 0 auto;

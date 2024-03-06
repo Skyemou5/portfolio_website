@@ -65,10 +65,11 @@ Houdni node graphs:
 - **Skills Learned:** Advanced understanding of Redshift's rendering capabilities and how to effectively use render passes to facilitate detailed compositing.
 - **Challenges:** Encountered and resolved issues during render time, necessitating multiple rendering iterations to perfect the visual output.
 
-{{< imageGrid gridstyle="asymetric" gridsize="160px" gap="10px" >}}
+{{< imageGrid gridstyle="asymetric" gridsize="300px" gap="10px" >}}
   ![redshift material nodes](/images/waterfall/waterfall-redshift-materials.jpg)
   ![test-render](/images/waterfall/waterfall-rock-render.jpg)
   ![waterfall viewport](/images/waterfall/waterfall.png)
+  ![waterfall viewport](/images/waterfall/waterfall-previs-render.png)
 {{< /imageGrid >}}
 
 ### Compositing in DaVinci Resolve's Fusion

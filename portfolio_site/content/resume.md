@@ -27,6 +27,8 @@ Skilled Technical Artist, Consultant, and Professor with experience in 3D modeli
 - **Visual Effects & Simulation:** Lighting, Particle Effects, Fluid Simulation, VFX
 - **Texturing & Material Creation:** PBR Texturing, NPR Materials
 - **Game Development & Environment Artistry:** Environment Art
+- **Pipeline Engineering & IT:** Render farm management, Linux, Terminal tools, development environments
+
 
 ---
 **Professional Experience:**

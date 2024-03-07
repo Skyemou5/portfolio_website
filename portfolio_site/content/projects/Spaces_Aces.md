@@ -81,14 +81,14 @@ I modeled film fidelity assets in blender and houdini, often using houdini to as
 
 Below are some lookdev renders and early tests. We were setup to use Redshift to render the cinematic.
 
-Planet render tests:
+**Planet render tests:**
 
 {{< imageGrid gridstyle="asymetric" gridsize="200px" gap="10px" >}}
   ![spaces aces](/images/spaces-aces/planet-01.png)
   ![spaces aces](/images/spaces-aces/planet-02.png) 
 {{< /imageGrid >}}
 
-Space Station:
+**Space Station:**
 
 {{< image src="/images/spaces-aces/space-station.jpg" alt="My Image" width="50%" >}}
 
@@ -119,9 +119,13 @@ I also developed tools to automatically generate destruction meshes and even ani
 
 Another challenging system was developing the shield tool. I made a procedural houdini tool to automatically generate a shield mesh for any ship. Then in unity I wrote a fragment shader to handle lasers from other ships shooting the shield and it's reaction and a charge up animation:
 
+{{< youtube syPGUM06Ejk 800 450 0 1>}}
+
 {{< youtube TGvoVH818Ck  800 450 0 1>}}
 
 {{< youtube ajQJ52NUkGg  800 450 0 1>}}
+
+**Trim Sheets:**
 
 I also introduced the team to trim sheet workflow which really helped our optimisation and general enviornment texturing workflow:
 

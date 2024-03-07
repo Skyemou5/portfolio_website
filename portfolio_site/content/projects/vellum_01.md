@@ -12,7 +12,7 @@ tags:
     - Redshift
     - Rendering
     - Procedural
-weight: 4
+weight: 5
 ---
 
 > My detailed notes on these experiments are in my [Second Brain](https://notes.mzmr.xyz/tags/vellum/).

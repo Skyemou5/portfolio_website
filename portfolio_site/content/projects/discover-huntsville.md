@@ -47,6 +47,11 @@ My selection for this internship was influenced by my role in a previous group p
 
 #### Plants generated with Houdini for virtual koi pond
 
+{{< image src="/images/dshv/plant-generator-nodes-main.jpg" alt="My Image" width="100%" >}}
+
+{{< image src="/images/dshv/waterweed-mesh.jpg" alt="My Image" width="100%" >}}
+
+
 ##### Lilly
 
 For this plant I used cable physics to set the stems, UV packing to pack the geometry of the lillypads and some clever vex to connect the cables.

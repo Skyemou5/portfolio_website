@@ -15,6 +15,7 @@
   --divider-color: #59898c;
   --project-hover-color: #88cbdf65;
   --banner-image: url("/images/pastel-cyberpunk/pastelcyberpunk.png");
+  --corner-radius: 5px;
 }
 
 
@@ -42,6 +43,10 @@ a {
   height: 2px;
   margin: 20px auto;
   
+}
+
+.image-link img{
+  border-radius: var(--corner-radius);
 }
 
 /* Responsive video CSS */
@@ -109,7 +114,7 @@ a {
   width: 100%; /* Makes the image responsive within its container */
   height: auto; /* Maintains the aspect ratio */
   object-fit: cover; /* Ensures the image covers the area, you can also use 'contain' if you don't want images to be cropped */
-  border-radius: 2%;
+  border-radius: var(--corner-radius);
 }
 
 /* Base grid style */
@@ -314,7 +319,7 @@ a {
   width: 100%;
   margin: 0 auto;
   max-width: 500px;
-  border-radius: 2%;
+  border-radius: var(--corner-radius);
   padding: 10px;
   box-sizing: border-box;
 }
@@ -331,12 +336,12 @@ a {
   max-height: 100%; /* You can set a max-height if you want to constrain the image by height as well */
   object-fit: contain; /* This will make sure the entire image fits within the container */
   object-position: center center;
-  border-radius: 2%;
+  border-radius: var(--corner-radius);
 }
 
 .project-image {
   max-width: 100%;
-  border-radius: 2%;
+  border-radius: 25px;
   height: auto;
   display: block;
   margin: 0 auto 20px; /* Adjust margin as needed */
@@ -352,7 +357,7 @@ a {
   width: 100%;
   height: auto;
   display: block;
-  border-radius: 2%;
+  border-radius: var(--corner-radius);
 }
 
 /* Project Tags */
@@ -387,7 +392,7 @@ a {
   height: auto;
   display: block;
   object-fit: cover;
-  border-radius: 2%;
+  border-radius: var(--corner-radius);
 }
 
 .project-images-grid.masonry {
@@ -418,9 +423,16 @@ a {
   grid-column: 1 / -1; /* Make the image span all columns */
   max-height: 400px; /* Optional: if you want to limit the height */
   object-fit: contain; /* Use 'contain' to ensure the entire image is visible */
-  border-radius: 2%;
+  border-radius: var(--corner-radius);
 }
 
+.project-images-grid.single-image {
+  border-radius: var(--corner-radius);
+}
+
+.single-image img {
+  border-radius: var(--corner-radius);
+}
 
 /* Footer */
 .footer {
@@ -595,7 +607,7 @@ blockquote {
   margin: 1.5em 10px;
   padding: 0.1em 20px;
   quotes: "\201C""\201D""\2018""\2019";
-  border-radius: 2%;
+  border-radius: var(--corner-radius);
 }
 
 .callout {
@@ -625,7 +637,7 @@ blockquote {
 /* misc */
 
 iframe {
-  border-radius: 2%;
+  border-radius: var(--corner-radius);
 }
 
 /* sketchfab */

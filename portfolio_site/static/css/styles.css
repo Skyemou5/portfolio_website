@@ -258,8 +258,11 @@ a {
 /* Profile */
 .profile-section {
   padding-top: 50px;
+  padding-left: 8px;
+  padding-right: 8px;
   text-align: center;
   background-color: var(--primary-color);
+  margin: 0 auto;
 }
 
 .profile-image {
@@ -275,6 +278,14 @@ a {
   padding: 0; /* Remove default padding */
   margin: 0; /* Remove default margin */
   text-align: center; /* Center-align the text */
+}
+
+.about-me {
+
+}
+
+.about-me-text {
+
 }
 
 /* Project grid */

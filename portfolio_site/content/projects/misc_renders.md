@@ -22,7 +22,7 @@ This is just a collection of some of the smaller projects I've done over the yea
 
 ## Legos
 
-I've always had a thing for those see-through Legos, and the red window piece? Total eye-candy. It’s all about the way they glow when the light hits just right. Had to give the bricks a drop in a quick animation – nothing beats the clink and clatter of Legos coming together, even if it's just on screen.
+I've always had a thing for those see-through Legos. It’s all about the way they glow when the light hits just right. Had to give the bricks a drop in a quick animation too.
 
 {{< youtube 7lwwUpRFfXo 800 450 0 1>}}
 

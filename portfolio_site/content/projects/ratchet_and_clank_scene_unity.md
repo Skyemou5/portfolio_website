@@ -10,7 +10,7 @@ tags:
     - Blender
     - CSharp
     - Game Dev
-summary: Recreation of a scene from ratched and clank as close as possible in Unity. Various tools like Blender, Unity, Substance were used to acoomplish this.
+summary: Recreation of a scene from Ratchet and Clank as close as possible in Unity. Various tools like Blender, Unity, Substance were used to acoomplish this.
 weight: 2
 ---
 
